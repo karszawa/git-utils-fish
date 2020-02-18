@@ -1,4 +1,4 @@
-function checkout_with_search
+function git_checkout_with_search
   git branch -a --sort=-authordate |
     grep -v -e '->' -e '*' |
     perl -pe 's/^\h+//g' |

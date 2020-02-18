@@ -1,4 +1,4 @@
-function merge_with_search
+function git_merge_with_search
   git branch -a --sort=-authordate |
     grep -v -e '->' -e '*' |
     perl -pe 's/^\h+//g' |
